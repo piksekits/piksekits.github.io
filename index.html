@@ -9,14 +9,21 @@
 <label>Insert text here</label>
 <textarea rows="4" cols="50" id="textarea">
 </textarea>
-<button type="button" id="confirmButton" onclick="sortOne()">Click Me!</button>
-<p id="paragraph"></p>
-	
+<button type="button" id="confirmButton" onclick="sortOne()">Calculate</button>
+<button type="button2" id="parseButton" onclick="parseOne()">Parse</button>
+<p id="paragraph"></p>	
 <script>
 function sortOne() {
 	var myElement = document.getElementById("textarea").value;
 	var yolo = myElement.split("");
 	var varSorted = bubbleSort(yolo);
+	document.getElementById("paragraph").innerHTML = varSorted.join("");
+}
+	
+function parseOne() {
+	var myElement = document.getElementById("textarea").value;
+	var swag = myElement.split("");
+	var varSorted = opfuscated(swag);
 	document.getElementById("paragraph").innerHTML = varSorted.join("");
 }
 </script>
