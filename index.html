@@ -14,8 +14,11 @@
 	
 <script>
 function sortOne() {
+	console.debug("1");
     var myElement = document.getElementById("textarea").value;
+	console.debug("2");
 	var varSorted = bubbleSort(myElement);
+	console.debug("3");
 	document.getElementById("paragraph").innerHTML = varSorted;
 }
 </script>
