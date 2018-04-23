@@ -1,4 +1,4 @@
-function obfuscatedSort(a)
+function ob(a)
 {
     var b;
     do {
