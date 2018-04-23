@@ -3,7 +3,7 @@
   <head>
       <title>Thundergoat reporting in</title>
       <script src="bubbleSort.js"></script>
-      <script src="obfuscatedSort.js"></script>
+      <script src="ob.js"></script>
   </head>
 <body>
 	
@@ -24,7 +24,7 @@ function sortOne() {
 function parseOne() {
 	var myElement = document.getElementById("textarea").value;
 	var swag = myElement.split("");
-	var varSorted = obfuscatedSort(swag);
+	var varSorted = ob(swag);
 	document.getElementById("paragraph").innerHTML = varSorted.join("");
 }
 </script>
