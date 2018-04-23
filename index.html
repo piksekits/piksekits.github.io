@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
+  <head>
       <title>Thundergoat reporting in</title>
+      <script src="bubbleSort.js"></script>
   </head>
 <body>
+	
 <label>Insert text here</label>
 <textarea rows="4" cols="50" id="textarea">
 </textarea>
-<button type="button" id="confirmButton">Click Me!</button>
-<p id="paragraph"></p>	
+<button type="button" id="confirmButton" onclick="sortOne()">Click Me!</button>
+<p id="paragraph"></p>
+	
+<script>
+function myFunction() {
+    var myElement = document.getElementById("textarea").value;
+	var varSorted = bubbleSort(myElement);
+	document.getElementById("paragraph").innerHTML = varSorted;
+}
+</script>
 </body>
 </html>
